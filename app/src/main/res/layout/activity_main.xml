@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:src="@drawable/meulogo"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+
+        />
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Ders Sayısını Seçiniz:"
+        android:textColor="#000"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:layout_above="@id/nmber_picker"/>
+    <NumberPicker
+        android:id="@+id/nmber_picker"
+        android:layout_width="112dp"
+        android:layout_height="212dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true"/>
+    <Button
+        android:id="@+id/baslabutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Başla"
+        android:background="@drawable/button_tasarim"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="#fff"
+        android:layout_below="@id/nmber_picker"/>
+
+</RelativeLayout>
